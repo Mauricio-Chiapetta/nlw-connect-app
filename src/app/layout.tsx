@@ -15,7 +15,7 @@ const oxanium = Oxanium({
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "700","500"],
   variable: "--montserrat-font",
 });
 
@@ -23,8 +23,11 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-br" className={`antialiased ${oxanium.variable} ${montserrat.variable}`}>
-      <body >{children}</body>
+    // biome-ignore lint/a11y/useValidLang: <explanation>
+<html lang="pt-br" className={`${oxanium.variable} ${montserrat.variable}`}>
+      <body className="bg-gray-900 text-gray-100  bg-[url(/background.png)] bg-no-repeat md:bg-right-top bg-top">
+        {children}
+      </body>
     </html>
   );
 }
