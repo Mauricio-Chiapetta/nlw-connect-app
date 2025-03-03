@@ -56,10 +56,13 @@ export default function Home() {
               <InputField type="email" placeholder="Email" />
             </InputRoot>
           </div>
+          
           <Button type="submit">
             Confirmar
             <ArrowRight />
           </Button>
+
+          
         </form>
       </div>
     </div>
