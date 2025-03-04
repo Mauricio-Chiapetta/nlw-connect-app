@@ -32,7 +32,7 @@ export function Ranking() {
           </span>
 
           <span className="font-heading text-2xl font-semibold text-gray-200 leading-none">
-            2050
+            19
           </span>
 
           <Image
@@ -48,7 +48,7 @@ export function Ranking() {
           </span>
 
           <span className="font-heading text-2xl font-semibold text-gray-200 leading-none">
-            2050
+            9
           </span>
 
           <Image
