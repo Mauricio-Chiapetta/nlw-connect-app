@@ -3,6 +3,9 @@ import type { ComponentProps } from 'react'
 interface inputRootProps extends ComponentProps<'div'> {
   error?: boolean
 }
+interface inputIconProps extends ComponentProps<'span'> {}
+interface inputFieldProps extends ComponentProps<'input'> {}
+
 export function InputRoot({ error = false, ...props }: inputRootProps) {
   return (
     <div
@@ -13,7 +16,6 @@ export function InputRoot({ error = false, ...props }: inputRootProps) {
   )
 }
 
-interface inputIconProps extends ComponentProps<'span'> {}
 export function InputIcon(props: inputIconProps) {
   return (
     <span
@@ -23,7 +25,6 @@ export function InputIcon(props: inputIconProps) {
   )
 }
 
-interface inputFieldProps extends ComponentProps<'input'> {}
 export function InputField(props: inputFieldProps) {
   return <input className="flex-1 outline-0 placeholder-gray-400" {...props} />
 }
