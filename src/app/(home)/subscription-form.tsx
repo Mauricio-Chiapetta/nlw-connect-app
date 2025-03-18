@@ -5,6 +5,8 @@ import { User, Mail, ArrowRight } from 'lucide-react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { subscribeToEvent } from '@/http/api'
+import { useRouter, useSearchParams } from 'next/navigation'
 // validação de formulário usando zod
 // name : string -> no mínimo 2 caracteres e uma mensagem de erro
 // email : string -> email  e (mensagem de erro)
@@ -17,6 +19,10 @@ type SubscriptionSchema = z.infer<typeof subscriptionSchema>
 
 export function SubscriptionForm() {
   // utilizando react hook form para validar formulario
+
+  const router = useRouter()
+  const searchParams = useSearchParams()
+
   const {
     register,
     handleSubmit,
@@ -25,8 +31,13 @@ export function SubscriptionForm() {
     resolver: zodResolver(subscriptionSchema),
   })
 
-  function onSubscribe(data: SubscriptionSchema) {
-    console.log(data)
+  async function onSubscribe({ name, email }: SubscriptionSchema) {
+
+    const referrer = searchParams.get('referrer')
+     const { subscriberId } = await subscribeToEvent({ name, email, referrer })
+ 
+     router.push(`/invite/${subscriberId}`)
+
   }
 
   return (
