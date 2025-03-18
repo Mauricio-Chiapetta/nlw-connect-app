@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Projeto - NLW Connect - Rocketseat
 
-## Getting Started
+## 📌 Sobre o Projeto
+Este projeto foi desenvolvido durante o evento NLW Connect da Rocketseat, abordando conceitos fundamentais do React e Next.js, além de boas práticas de desenvolvimento moderno com TypeScript, validação de formulários, composição de componentes e outras ferramentas essenciais.
 
-First, run the development server:
+## 🛠️ Tecnologias Utilizadas
+- **React.js** - Biblioteca para construção de interfaces dinâmicas
+- **Next.js** - Framework para aplicações React otimizadas
+- **Tailwind CSS** - Estilização utilizando classes utilitárias
+- **React Hook Form** - Gerenciamento de formulários eficiente
+- **Orval** - Geração de clientes HTTP a partir de OpenAPI
+- **Biome** - Ferramenta para linting, formatação e análise de código
+- **Zod** - Validação de dados de forma tipada
+- **TypeScript** - Tipagem estática para maior segurança no código
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ⚙️ Instalação e Execução
+### 1️⃣ Clonar o repositório
+```sh
+ git clone https://github.com/Mauricio-Chiapetta/nlw-connect-app.git
+ cd nlw-connect-app
+```
+### 2️⃣ Instalar as dependências
+```sh
+npm install  # ou yarn install
+```
+### 3️⃣ Rodar o projeto
+```sh
+npm run dev  # ou yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🏗️ Funcionalidades Implementadas
+- 📌 Padrão de composição de componentes
+- 🎨 Estilização utilizando Tailwind CSS
+- 🔄 Roteamento otimizado com App Router
+- 🔀 Uso de Server Components e Client Components
+- ✅ Validação de formulários com React Hook Form e Zod
+- 🔗 Integração com API utilizando Orval
+- 🚀 Configuração otimizada da toolchain com Biome
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📜 Licença
+Este projeto está sob a licença MIT. Sinta-se à vontade para utilizá-lo e aprimorá-lo!
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
+Feito com ❤️ por [Mauricio Chiapetta](https://github.com/Mauricio-Chiapetta) 🚀
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
